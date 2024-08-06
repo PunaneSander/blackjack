@@ -1,0 +1,14 @@
+make.exe --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/c/Users/sande/Desktop/Schoolwork/IV Semester/C++/Projekt'
+g++ -static -Wall -std=c++11 -Iinclude -c src/input.cpp -o obj/input.o
+ 
+g++ -static -Wall -std=c++11 -Iinclude -c src/play.cpp -o obj/play.o
+ 
+g++ -static -Wall -std=c++11 -Iinclude -c src/card.cpp -o obj/card.o
+ 
+g++ -static -Wall -std=c++11 -Iinclude -c src/hand.cpp -o obj/hand.o
+ 
+g++ -static -Wall -std=c++11 -Iinclude -c src/deck.cpp -o obj/deck.o
+ar cr lib/libfunctions.a obj/input.o obj/play.o obj/card.o obj/hand.o obj/deck.o
+make: Leaving directory '/c/Users/sande/Desktop/Schoolwork/IV Semester/C++/Projekt'
+ 
